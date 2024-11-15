@@ -156,6 +156,28 @@
             font-size: 21px;
         }
     </style>
+
+    <script>
+        addEventListener("load", () => {
+            document.getElementById("filetag").addEventListener("change", function () {
+                changeImage(this);
+            });
+        })
+
+        function changeImage(input) {
+            var reader;
+
+            if (input.files && input.files[0]) {
+                reader = new FileReader();
+
+                reader.onload = function (e) {
+                    document.getElementById("preview").setAttribute('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -543,104 +565,104 @@
                         <td><strong>Ammo</strong></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="number"/></td>
-                        <td><input type="number"/></td>
+                        <td><input type="text" /></td>
+                        <td><input type="number" /></td>
+                        <td><input type="number" /></td>
                     </tr>
                 </table>
             </td>
@@ -651,6 +673,25 @@
         </tr>
         <tr>
             <td colspan="3"><textarea></textarea></td>
+        </tr>
+        
+        <tr class="noPrint">
+            <td>&nbsp</td>
+        </tr>
+        <tr>
+            <td>
+                Character Picture
+            </td>
+        </tr>
+        <tr class="noPrint">
+            <td colspan="3">
+                <input type="file" id="filetag" accept="image/*">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <img src="" id="preview" style="width: 100%;">
+            </td>
         </tr>
     </table>
 </body>
