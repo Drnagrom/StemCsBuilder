@@ -1,0 +1,318 @@
+<html>
+
+<head>
+    <title>St&#233;m CS Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <style>
+        * {
+            font-family: Arial;
+            font-variant: normal;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            overflow-y: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        table {
+            border-spacing: 1em;
+            margin: 1rem auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border-radius: 6px;
+            border: 1px solid black;
+        }
+
+        input,
+        select {
+            width: 100%;
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #000000;
+        }
+
+        nav * {
+            color: #ffffff !important;
+        }
+
+        tr,
+        th,
+        td {
+            align-items: center;
+            vertical-align: top;
+        }
+
+        .noborder,
+        .noborder>tbody>tr>td,
+        .noborder>tr>td {
+            border: none !important;
+        }
+
+        .navitem {
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-variant: normal;
+            font-weight: 400;
+            font-family: Arial;
+            font-size: medium;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .navitem:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>St&#233;m CS Builder</h1>
+        <a class="navitem" href="https://sites.google.com/view/stemsteampunk/home">To RPG Site</a>
+        <button class="navitem">Print CS</button>
+    </nav>
+    <table class="noborder">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td><strong>Player Name</strong></td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Character Name</strong></td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td class="noborder">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Race</strong> <a
+                                href="https://sites.google.com/view/stemsteampunk/characters-skills/races">🔗</a></td>
+                        <td>
+                            <Select>
+                                <option selected disabled>Please Select...</option>
+                                <option>Human</option>
+                                <option>Elf</option>
+                                <option>Dwarf</option>
+                                <option>Gnome</option>
+                            </Select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Skill Chosen</td>
+                        <td>
+                            <Select>
+                                <option selected disabled>Please Select...</option>
+                                <optgroup label="Knowledge & Intelligence (Education-Based Skills, Edu)">
+                                    <option>Medical</option>
+                                    <option>History</option>
+                                    <option>Investigate</option>
+                                    <option>Engineering</option>
+                                    <option>Pilot</option>
+                                </optgroup>
+                                <optgroup label="Social & Communication (Charisma-Based Skills, Chr)">
+                                    <option>Persuasion</option>
+                                    <option>Negotiation</option>
+                                    <option>Music</option>
+                                    <option>Leadership</option>
+                                </optgroup>
+                                <optgroup label="Dexterity & Agility (Agility-Based Skills, Ag)">
+                                    <option>Stealing</option>
+                                    <option>Stealth</option>
+                                    <option>Athletics</option>
+                                    <option>Bows</option>
+                                    <option>Rifles</option>
+                                </optgroup>
+                                <optgroup label="Strength & Combat (Strength-Based Skills, Str)">
+                                    <option>Polearms</option>
+                                    <option>Swords</option>
+                                    <option>Blunt Weapons</option>
+                                    <option>Bows</option>
+                                    <option>Martial Arts</option>
+                                </optgroup>
+                            </Select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="noborder">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td>Background <a
+                                href="https://sites.google.com/view/stemsteampunk/characters-skills/backgrounds">🔗</a>
+                        </td>
+                        <td>
+                            <Select>
+                                <option selected disabled>Please Select...</option>
+                                <option>Street Rats</option>
+                                <option>Tinker</option>
+                                <option>Charmer</option>
+                                <option>Guild Child</option>
+                                <option>Inventor's Apprentice</option>
+                                <option>Airship Navigator</option>
+                                <option>Alchemical Scholar</option>
+                            </Select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Skill Chosen</td>
+                        <td>
+                            <Select>
+                                <option selected disabled>Please Select...</option>
+                                <optgroup label="Knowledge & Intelligence (Education-Based Skills, Edu)">
+                                    <option>Medical</option>
+                                    <option>History</option>
+                                    <option>Investigate</option>
+                                    <option>Engineering</option>
+                                    <option>Pilot</option>
+                                </optgroup>
+                                <optgroup label="Social & Communication (Charisma-Based Skills, Chr)">
+                                    <option>Persuasion</option>
+                                    <option>Negotiation</option>
+                                    <option>Music</option>
+                                    <option>Leadership</option>
+                                </optgroup>
+                                <optgroup label="Dexterity & Agility (Agility-Based Skills, Ag)">
+                                    <option>Stealing</option>
+                                    <option>Stealth</option>
+                                    <option>Athletics</option>
+                                    <option>Bows</option>
+                                    <option>Rifles</option>
+                                </optgroup>
+                                <optgroup label="Strength & Combat (Strength-Based Skills, Str)">
+                                    <option>Polearms</option>
+                                    <option>Swords</option>
+                                    <option>Blunt Weapons</option>
+                                    <option>Bows</option>
+                                    <option>Martial Arts</option>
+                                </optgroup>
+                            </Select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="noborder">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td>Career <a
+                                href="https://sites.google.com/view/stemsteampunk/characters-skills/careers">🔗</a></td>
+                        <td>
+                            <Select>
+                                <option selected disabled>Please Select...</option>
+                                <option>Hunters</option>
+                                <option>Explorers</option>
+                                <option>Gadgeteer</option>
+                                <option>Entertainer</option>
+                                <option>Achemist</option>
+                                <option>Steamwright</option>
+                                <option>Shadow Operative</option>
+                                <option>Airship Captain</option>
+                                <option>Airship Captain</option>
+                            </Select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Skill Chosen</td>
+                        <td>
+                            <Select>
+                                <option selected disabled>Please Select...</option>
+                                <optgroup label="Knowledge & Intelligence (Education-Based Skills, Edu)">
+                                    <option>Medical</option>
+                                    <option>History</option>
+                                    <option>Investigate</option>
+                                    <option>Engineering</option>
+                                    <option>Pilot</option>
+                                </optgroup>
+                                <optgroup label="Social & Communication (Charisma-Based Skills, Chr)">
+                                    <option>Persuasion</option>
+                                    <option>Negotiation</option>
+                                    <option>Music</option>
+                                    <option>Leadership</option>
+                                </optgroup>
+                                <optgroup label="Dexterity & Agility (Agility-Based Skills, Ag)">
+                                    <option>Stealing</option>
+                                    <option>Stealth</option>
+                                    <option>Athletics</option>
+                                    <option>Bows</option>
+                                    <option>Rifles</option>
+                                </optgroup>
+                                <optgroup label="Strength & Combat (Strength-Based Skills, Str)">
+                                    <option>Polearms</option>
+                                    <option>Swords</option>
+                                    <option>Blunt Weapons</option>
+                                    <option>Bows</option>
+                                    <option>Martial Arts</option>
+                                </optgroup>
+                            </Select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Soak</td>
+                        <td class="noborder">&nbsp</td>
+                        <td><strong>Strength</strong></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" /></td>
+                        <td class="noborder">&nbsp</td>
+                        <td><input type="number" /></td>
+                    </tr>
+                    <tr>
+                        <td class="noborder"></td>
+                        <td class="noborder">&nbsp</td>
+                        <td><strong>Agility</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="noborder"></td>
+                        <td class="noborder">&nbsp</td>
+                        <td><input type="number" /></td>
+                    </tr>
+                    <tr>
+                        <td class="noborder"></td>
+                        <td class="noborder">&nbsp</td>
+                        <td><strong>Education</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="noborder"></td>
+                        <td class="noborder">&nbsp</td>
+                        <td><input type="number" /></td>
+                    </tr>
+                    <tr>
+                        <td class="noborder"></td>
+                        <td class="noborder">&nbsp</td>
+                        <td><strong>Charisma</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="noborder"></td>
+                        <td class="noborder">&nbsp</td>
+                        <td><input type="number" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
